@@ -1,3 +1,293 @@
+<<<<<<< HEAD
+/*general styles*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font: 16px 'Mali', cursive;
+	scroll-behavior: smooth
+	
+}
+
+ul,
+nav,
+li {
+	list-style: none;
+}
+
+
+a {
+	text-decoration: none;
+	opacity: 0.75;
+	color: #fff;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+/* header*/
+.navbar-brand {
+	font-family: 'Mali', cursive;
+}
+
+.scrolled{
+  background-color: #9966ff;
+  transition: 0.3s;
+}
+
+.hero {
+	position: relative;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	min-height: 100vh;
+	font-family:'Mali', cursive;
+	min-width: 65vh;
+	
+}
+
+.hero .hero-content img {
+	position: relative;
+	border-radius: 50%;
+	width: 200px;
+	height: 225px;
+	border: 3px #fff solid;
+	margin: 20px;
+}
+
+.hero .hero-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 275px 0;
+	background-size: cover;
+	z-index: -1;
+	background: linear-gradient(-45deg, #6699ff, #9966ff, #99ccff, #33cccc);
+	background-size: 400% 400%;
+	-webkit-animation: Gradient 15s ease infinite;
+	-moz-animation: Gradient 15s ease infinite;
+	animation: Gradient 15s ease infinite;
+}
+
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@-moz-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 75px 80px;
+}
+
+ /*about*/
+p{
+	color: #6699ff;
+}
+
+p:last-of-type {
+	margin-bottom: 100px;
+}
+ 
+hr {
+	width: 250px;
+	height: 3px;
+	background-color: #9966ff;
+	border: 0;
+	margin-bottom: 50px;
+	
+}
+
+ /*portfolio*/
+h2 {
+	color: #9966ff;
+	text-align: center;
+	text-decoration: underline;
+}
+
+ .grid {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+div.item {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background:#33cccc;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+div.item * {
+  box-sizing: border-box;
+}
+
+div.item img {
+  max-width: 100%;
+  vertical-align: top;
+  height: 210px;
+}
+
+div.item i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  font-size: 34px;
+  color: #33cccc;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #ffffff;
+}
+
+div.item a {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+div.item.purple {
+  background-color: #33cccc;
+}
+
+div.item.purple i {
+  color: #33cccc;
+}
+
+div.item:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+div.item * {
+  transition: all .35s ease-in-out;
+}
+
+div.item i {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+div.item:hover i {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/*contact*/
+section.contact { 
+background: #99ccff;
+color: #fff;
+font-family: 'Mali', cursive;
+}
+
+div.input-container, #submit {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+input {
+	width: 300px;
+	height: 50px;
+	border-radius: 25px;
+	border: none;
+	margin: 15px;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+	color: #99ccff;
+	font-family: 'Mali', cursive;
+	font-size: 15px;
+	text-align: center;
+}
+
+input:focus,
+input:enabled,
+textarea:focus,
+textarea:enabled {
+	outline: none;
+	color: #99ccff;
+	font-family: 'Mali', cursive;
+	font-size: 15px;
+	text-align: center;
+}
+
+textarea {
+	display: flex;
+	align-items: center;
+	border: none;
+	border-radius: 25px;
+	resize: none;
+}
+
+ button {
+	 width: 200px;
+	 height: 50px;
+	 border-radius: 25px;
+	 border: none;
+	 background: #fff;
+	 color: #99ccff;
+	 font-size: 20px;
+	 font-family: 'Mali', cursive;
+	 margin: 15px;
+ }
+
+ button:hover {
+	background: #7ab2eb;
+	color: #fff;
+	font-family: 'Mali', cursive;
+	transition: background 0.2s ease-out;
+=======
 /*general styles*/
 * {
 	margin: 0;
@@ -294,4 +584,5 @@ textarea {
 	color: #fff;
 	font-family: 'Mali', cursive;
 	transition: background 0.2s ease-out;
+>>>>>>> 5847917ef23e94c85341903bd5e8d3746c9a0653
  }
